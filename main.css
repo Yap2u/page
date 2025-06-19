@@ -1,0 +1,601 @@
+/* --- styles.css content --- */
+@font-face{font-family:icons;src:url(webfont/icons.ttf?54caa757d41e52941950e7e0d0fdb4dd) format("truetype"),url(webfont/icons.woff?54caa757d41e52941950e7e0d0fdb4dd) format("woff"),url(webfont/icons.woff2?54caa757d41e52941950e7e0d0fdb4dd) format("woff2"),url(webfont/icons.eot?54caa757d41e52941950e7e0d0fdb4dd#iefix) format("embedded-opentype"),url(webfont/icons.svg?54caa757d41e52941950e7e0d0fdb4dd#icons) format("svg")}
+i[class*=" webfont-"]:before,i[class^=webfont-]:before{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:icons!important;font-style:normal;font-variant:normal;font-weight:400!important;line-height:1;text-transform:none}
+.webfont-accommodation:before{content:"\f101"}
+.webfont-accordion_arrow:before{content:"\f102"}
+.webfont-account:before{content:"\f103"}
+.webfont-american:before{content:"\f104"}
+.webfont-arrow_arch:before{content:"\f105"}
+.webfont-arrow_down:before{content:"\f106"}
+.webfont-arrow-right:before{content:"\f107"}
+.webfont-back_15:before{content:"\f108"}
+.webfont-bank:before{content:"\f109"}
+.webfont-basic-words-and-phrases:before{content:"\f10a"}
+.webfont-beta:before{content:"\f10b"}
+.webfont-billing:before{content:"\f10c"}
+.webfont-books:before{content:"\f10d"}
+.webfont-british:before{content:"\f10e"}
+.webfont-broken_link:before{content:"\f10f"}
+.webfont-camera:before{content:"\f110"}
+.webfont-card:before{content:"\f111"}
+.webfont-castellano:before{content:"\f112"}
+.webfont-centro_americano:before{content:"\f113"}
+.webfont-check:before{content:"\f114"}
+.webfont-close_2:before{content:"\f115"}
+.webfont-close:before{content:"\f116"}
+.webfont-collections_2:before{content:"\f117"}
+.webfont-collections:before{content:"\f118"}
+.webfont-common-expressions:before{content:"\f119"}
+.webfont-crop:before{content:"\f11a"}
+.webfont-download:before{content:"\f11b"}
+.webfont-drag:before{content:"\f11c"}
+.webfont-driving:before{content:"\f11d"}
+.webfont-email:before{content:"\f11e"}
+.webfont-exit_beta_arrow:before{content:"\f11f"}
+.webfont-expemo_app:before{content:"\f120"}
+.webfont-expemo_bubble_graph:before{content:"\f121"}
+.webfont-expemo_bubble_phone:before{content:"\f122"}
+.webfont-expemo_bubble_profile:before{content:"\f123"}
+.webfont-expemo_logo_blue:before{content:"\f124"}
+.webfont-expemo:before{content:"\f125"}
+.webfont-eye:before{content:"\f126"}
+.webfont-ezine:before{content:"\f127"}
+.webfont-facebook:before{content:"\f128"}
+.webfont-filters:before{content:"\f129"}
+.webfont-food-and-drink:before{content:"\f12a"}
+.webfont-for_learners:before{content:"\f12b"}
+.webfont-for_teachers:before{content:"\f12c"}
+.webfont-forward_15:before{content:"\f12d"}
+.webfont-google_plus:before{content:"\f12e"}
+.webfont-hamburger_menu:before{content:"\f12f"}
+.webfont-hand_tap:before{content:"\f130"}
+.webfont-health:before{content:"\f131"}
+.webfont-help:before{content:"\f132"}
+.webfont-image_placeholder:before{content:"\f133"}
+.webfont-info:before{content:"\f134"}
+.webfont-innovate:before{content:"\f135"}
+.webfont-kebab_menu:before{content:"\f136"}
+.webfont-lessons:before{content:"\f137"}
+.webfont-letter_h:before{content:"\f138"}
+.webfont-letter_l:before{content:"\f139"}
+.webfont-lhlogo:before{content:"\f13a"}
+.webfont-linguaclass_benefit_1:before{content:"\f13b"}
+.webfont-linguaclass_benefit_2:before{content:"\f13c"}
+.webfont-linguaclass_benefit_3:before{content:"\f13d"}
+.webfont-linguahouse_logo_blue:before{content:"\f13e"}
+.webfont-linked_in:before{content:"\f13f"}
+.webfont-lock:before{content:"\f140"}
+.webfont-logo_blue:before{content:"\f141"}
+.webfont-logo_conversation:before{content:"\f142"}
+.webfont-logo:before{content:"\f143"}
+.webfont-management:before{content:"\f144"}
+.webfont-marker:before{content:"\f145"}
+.webfont-meeting-people:before{content:"\f146"}
+.webfont-not_supported:before{content:"\f147"}
+.webfont-numbers:before{content:"\f148"}
+.webfont-on-the-telephone:before{content:"\f149"}
+.webfont-pdf_2:before{content:"\f14a"}
+.webfont-pdf_small:before{content:"\f14b"}
+.webfont-plan_free:before{content:"\f14c"}
+.webfont-plan_gold:before{content:"\f14d"}
+.webfont-plan_silver:before{content:"\f14e"}
+.webfont-preview-eye:before{content:"\f14f"}
+.webfont-private:before{content:"\f150"}
+.webfont-profile_widget_preview_sg:before{content:"\f151"}
+.webfont-restore:before{content:"\f152"}
+.webfont-rocket_no_results:before{content:"\f153"}
+.webfont-save:before{content:"\f154"}
+.webfont-school_2:before{content:"\f155"}
+.webfont-school:before{content:"\f156"}
+.webfont-scooter:before{content:"\f157"}
+.webfont-search:before{content:"\f158"}
+.webfont-services:before{content:"\f159"}
+.webfont-share_nodes:before{content:"\f15a"}
+.webfont-share:before{content:"\f15b"}
+.webfont-shopping:before{content:"\f15c"}
+.webfont-sightseeing-and-entertainment:before{content:"\f15d"}
+.webfont-supported:before{content:"\f15e"}
+.webfont-time-and-day:before{content:"\f15f"}
+.webfont-time:before{content:"\f160"}
+.webfont-trash:before{content:"\f161"}
+.webfont-travelling:before{content:"\f162"}
+.webfont-tree:before{content:"\f163"}
+.webfont-twitter:before{content:"\f164"}
+.webfont-work:before{content:"\f165"}
+
+/* --- body.css content --- */
+bbody {
+            margin: 0;
+            padding: 0;
+            font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-weight: 300;
+            background-color: #F8F9FC;
+            line-height: 1.6;
+            color: #003382; /* the universe color */
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3794FC;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 2rem;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: #24292C;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-menu a:hover {
+            color: #3794FC;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #3794FC 0%, #2563EB 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            background-color: #fff;
+            color: #3794FC;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Content Sections */
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #24292C;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: #3794FC;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #24292C;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+      
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #24292C;
+        }
+                
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3794FC;
+        }
+ 
+        /* Footer */
+        .footer {
+            background-color: #24292C;
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #3794FC;
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: #3794FC;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 1rem;
+            color: #ccc;
+          }
+        
+         .stars {
+            font-size: 24px;
+            color: gold;
+            margin-top: 10px;
+    
+        }
+        
+        /* Worksheet Styles */
+        .worksheet-section {
+            padding: 3rem 0;
+            background: #f8f9fc;
+        }
+        .worksheet-flex {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: nowrap;
+        }
+        .worksheet-pdf {
+            flex: 0 0 40%;
+            min-width: 280px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .worksheet-pdf iframe {
+            width: 100%;
+            min-height: 600px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: #fafbfc;
+        }
+        .worksheet-content {
+            flex: 1 1 60%;
+            min-width: 320px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .worksheet-list ul {
+            list-style: decimal inside;
+            padding-left: 1rem;
+        }
+        .worksheet-list li {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
+        .worksheet-video iframe {
+            width: 100%;
+            min-height: 300px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: #fafbfc;
+        }
+        .worksheet-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: flex-start;
+        }
+        .worksheet-buttons .btn {
+            background: #3794FC;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+            border: none;
+            display: inline-block;
+        }
+        .worksheet-buttons .btn:hover {
+            background: #2563EB;
+        }
+        /* --- End worksheet styles --- */
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .worksheet-flex {
+                flex-direction: column;
+            }
+            .worksheet-pdf, .worksheet-content {
+                min-width: 0;
+                width: 100%;
+                padding: 1rem 0.5rem;
+            }
+            .worksheet-pdf iframe,
+            .worksheet-video iframe {
+                min-height: 300px;
+            }
+            .worksheet-content {
+                order: 1;
+            }
+            .worksheet-pdf {
+                order: 2;
+            }
+            .worksheet-buttons {
+                order: 3;
+                margin-top: 1.5rem;
+                justify-content: center;
+            }
+            .worksheet-content {
+                display: flex;
+                flex-direction: column;
+            }
+            /* Move buttons to bottom of PDF */
+            .worksheet-pdf {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .worksheet-pdf .worksheet-buttons {
+                order: 2;
+                width: 100%;
+                justify-content: center;
+                margin-top: 1.5rem;
+            }
+            /* Hide buttons in content on mobile, show in PDF */
+            .worksheet-content .worksheet-buttons {
+                display: none;
+            }
+            .worksheet-pdf .worksheet-buttons {
+                display: flex;
+            }
+        }
+        
+        /* Hide PDF buttons on desktop, show in content */
+        .worksheet-pdf .worksheet-buttons {
+            display: none;
+        }
+        .worksheet-content .worksheet-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            justify-content: center; /* Center horizontally */
+        }
+        
+        /* On mobile, hide in content, show in PDF */
+        @media (max-width: 900px) {
+            .worksheet-content .worksheet-buttons {
+                display: none;
+            }
+            .worksheet-pdf .worksheet-buttons {
+                display: flex;
+                gap: 1rem;
+                margin-top: 1.5rem;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+        
+        .worksheet-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #24292C;
+        }
+        
+        /* Add to styles.css or body.css */
+.worksheet-title {
+    margin-top: 18px;
+}
+
+.title {
+  color: #003382;
+}
+
+/* --- New styles for courses page --- */
+.courses-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    width: 340px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+.course-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+.course-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.course-content {
+    padding: 18px;
+    text-align: left;
+}
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 20px;
+    background: #003382;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.btn:hover {
+    background: #0050c8;
+}
+.section-title {
+    text-align: center;
+    margin-top: 18px;
+}
+.section-desc {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.search-bar input {
+    width: 320px;
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.search-bar button {
+    padding: 8px 16px;
+    border: none;
+    background: #003382;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.stats-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px 0;
+}
+.stats-box {
+    background: #f5f7fa;
+    border-radius: 8px;
+    padding: 18px 32px;
+    text-align: center;
+    min-width: 180px;
+}
+.stats-box h4 {
+    margin: 0 0 8px 0;
+    color: #003382;
+}
+.stats-box p {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
