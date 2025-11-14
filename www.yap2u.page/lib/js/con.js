@@ -1,11 +1,11 @@
 // Object holding currency exchange rates relative to USD
 var currencyRates = {
   USD: 1,
-  BRL: 5.2,
-  EUR: 0.93,
-  GBP: 0.79,
+  BRL: 5.3,
+  EUR: 0.86,
+  GBP: 0.76,
   CAD: 1.37,
-  INR: 83.2
+  INR: 88.0
 };
 
 function getUserCurrency() {
@@ -60,3 +60,4 @@ if (document.addEventListener) {
 } else if (window.attachEvent) {
   window.attachEvent('onload', convertPrices);
 }
+
