@@ -18,15 +18,15 @@
   @media (max-width:900px) {
     #hero {
   width: 100%;
-  height: 600px;              /* Desktop */
-  min-height: 900px;          /* Ensures full stretch on mobile */
+  height: 520px;              /* Desktop */
+  min-height: 600px;          /* Ensures full stretch on mobile */
   display: block;
 }
 
 @media (max-width: 900px) {
   #hero {
     height: 100vh !important; /* FULL SCREEN HEIGHT on mobile */
-    min-height: 900px !important;
+    min-height: 700px !important;
   }
 
   #gs-slides .gs-slide {
@@ -395,8 +395,8 @@ document.addEventListener('DOMContentLoaded', function () {
   function setPosition(i) {
       const pos = positions[i];
       const isMobile = window.innerWidth <= 900;
-      const mainOffset = '30px';
-      const subOffset = '20px';
+      const mainOffset = '40px';
+      const subOffset = '30px';
 
       // Horizontal positioning
       if (pos === 'left') {
@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function () {
           textBox.style.transform = 'translateY(-50%)';
           textBox.style.bottom = 'auto';
 
-          subTitle.style.top = 'calc(50% + 50px)';
+          subTitle.style.top = 'calc(50% + 80px)';
           subTitle.style.bottom = 'auto';
           subTitle.style.transform = 'none';
       }
