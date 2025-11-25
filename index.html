@@ -13,21 +13,15 @@
     padding:0;
     line-height:1.5;
     color:#333;
-  }
-
-  @media (max-width:900px) {
-#hero {
-  width: 100% !important;  
-  height: auto;
-  display: block;
-}
-
+/* MOBILE (max-width: 900px) */
 @media (max-width: 900px) {
   #hero {
-    height: 800px !important;  /* or 100vh */
+    width: 100%;
+    height: 400px;      /* smaller height */
+    min-height: 400px;  /* prevent growing larger */
+    display: block;
   }
 }
-
   #gs-slides .gs-slide {
     width: 100% !important;
     height: 100% !important;
