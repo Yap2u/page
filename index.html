@@ -16,11 +16,17 @@
   color:#333;
 }
 
-  <style>
+  
+   <style>
     @media (max-width:900px) {
-      #hero { height:660px !important; }
-      #slide-text { font-size:32px !important; max-width:100% !important; }
+      /* Mobile: make hero taller (longer) */
+      #hero { height:110vh !important; min-height:900px !important; }
+      #slide-text { font-size:36px !important; max-width:92% !important; padding:0 16px !important; }
 
+      #slide-text, #sub-title {
+        position: absolute;
+        transition: all 0.6s ease;
+      }
       #slide-text, #sub-title {
         position: absolute;
         transition: all 0.6s ease;
