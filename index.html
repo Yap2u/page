@@ -20,10 +20,17 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
+@media (max-width:900px) {
+  #hero {
+    height: 100vh !important;   /* Full mobile screen */
+    max-height: 100vh !important;
+  }
 
-    @media (max-width:900px) {
-      #hero { height: 75vh;  !important; }
-      #slide-text { font-size:32px !important; max-width:100% !important; }
+  #gs-slides img {
+    object-fit: cover !important;
+    height: 100vh !important;
+  }
+
 
       #slide-text, #sub-title {
         position: absolute;
