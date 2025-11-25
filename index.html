@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function () {
             subTitle.style.transform = 'none';
 
             // Wait for subtitle to render before calculating main text position
-            const subHeight = subTitle.offsetHeight || 30; // Use a fallback height
+            const subHeight = subTitle.offsetHeight || 50; // Use a fallback height
             textBox.style.bottom = `calc(${mainOffset} + ${subHeight}px)`;
             textBox.style.top = 'auto';
             textBox.style.transform = 'none';
