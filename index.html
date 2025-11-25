@@ -158,7 +158,6 @@
     </a>
   </div>
 
-
   <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Focus on conversation, without forgetting the grammar.</h2>
 
   <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:50px;">
@@ -388,195 +387,213 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-	const slides = Array.from(document.querySelectorAll('#gs-slides .gs-slide'));
-	const textBox = document.getElementById('slide-text');
-	const subTitle = document.getElementById('sub-title');
+   const slides = Array.from(document.querySelectorAll('#gs-slides .gs-slide'));
+  const textBox = document.getElementById('slide-text');
+  const subTitle = document.getElementById('sub-title');
 
-	const captions = [
-		`<span style="font-weight:900;">Where every</span><br><span style="font-weight:300;">PLACE MEETS</span><br><span style="font-weight:900;">every face</span>`,
-		`<span style="font-weight:300;">Make friends</span><br><span style="font-weight:900;">AROUND</span><br><span style="font-weight:300;">the world</span>`,
-		`<span style="font-weight:300;">Prepare for</span><br><span style="font-weight:900;">TOEFL • IELTS</span><br>   <span style="font-weight:300;">Cambridge</span>`,
-		`<span style="font-weight:900;">Go places</span><br><span style="font-weight:300;">Meet people</span><br><span style="font-weight:900;">Make memories</span>`
-	];
+  const captions = [
+    `<span style="font-weight:900;">Where every</span><br><span style="font-weight:300;">PLACE MEETS</span><br><span style="font-weight:900;">every face</span>`,
+    `<span style="font-weight:300;">Make friends</span><br><span style="font-weight:900;">AROUND</span><br><span style="font-weight:300;">the world</span>`,
+     `<span style="font-weight:300;">Prepare for</span><br><span style="font-weight:900;">TOEFL • IELTS</span><br>   <span style="font-weight:300;">Cambridge</span>`,
+    `<span style="font-weight:900;">Go places</span><br><span style="font-weight:300;">Meet people</span><br><span style="font-weight:900;">Make memories</span>`
+  ];
 
-	const subCaptions = [
-		`<strong style="color:#ff3b3b;">Business</strong>`,
-		`<strong style="color:#3b7bff;">Friendship</strong>`,
-		`<strong style="color:#ff3b3b;">Education</strong>`,
-		`<strong style="color:#3b7bff;">Travel</strong>`
-	];
+  const subCaptions = [
+    `<strong style="color:#ff3b3b;">Business</strong>`,
+    `<strong style="color:#3b7bff;">Friendship</strong>`,
+    `<strong style="color:#ff3b3b;">Education</strong>`,
+    `<strong style="color:#3b7bff;">Travel</strong>`
+  ];
 
-	const positions = ['left', 'right', 'left', 'right'];
+  const positions = ['left', 'right', 'left', 'right'];
 
-	function setPosition(i) {
-		const pos = positions[i];
-		const isMobile = window.innerWidth <= 900;
-		const mainOffset = '30px';
-		const subOffset = '20px';
+  function setPosition(i) {
+      const pos = positions[i];
+      const isMobile = window.innerWidth <= 900;
+      const mainOffset = '30px';
+      const subOffset = '20px';
 
-		// Horizontal positioning
-		if (pos === 'left') {
-			textBox.style.left = mainOffset;
-			textBox.style.right = 'auto';
-			textBox.style.textAlign = 'left';
+      // Horizontal positioning
+      if (pos === 'left') {
+          textBox.style.left = mainOffset;
+          textBox.style.right = 'auto';
+          textBox.style.textAlign = 'left';
 
-			subTitle.style.left = mainOffset;
-			subTitle.style.right = 'auto';
-			subTitle.style.textAlign = 'left';
-		} else {
-			textBox.style.right = mainOffset;
-			textBox.style.left = 'auto';
-			textBox.style.textAlign = 'right';
+          subTitle.style.left = mainOffset;
+          subTitle.style.right = 'auto';
+          subTitle.style.textAlign = 'left';
+      } else {
+          textBox.style.right = mainOffset;
+          textBox.style.left = 'auto';
+          textBox.style.textAlign = 'right';
 
-			subTitle.style.right = mainOffset;
-			subTitle.style.left = 'auto';
-			subTitle.style.textAlign = 'right';
-		}
+          subTitle.style.right = mainOffset;
+          subTitle.style.left = 'auto';
+          subTitle.style.textAlign = 'right';
+      }
 
-		// Vertical positioning
-		if (isMobile) {
-			textBox.style.bottom = mainOffset;
-			textBox.style.top = 'auto';
-			textBox.style.transform = 'none';
+      // Vertical positioning
+      if (isMobile) {
+          textBox.style.bottom = mainOffset;
+          textBox.style.top = 'auto';
+          textBox.style.transform = 'none';
 
-			subTitle.style.bottom = subOffset;
-			subTitle.style.top = 'auto';
-			subTitle.style.transform = 'none';
+          subTitle.style.bottom = subOffset;
+          subTitle.style.top = 'auto';
+          subTitle.style.transform = 'none';
 
-			// push main text up above subtitle
-			textBox.style.bottom = `calc(${mainOffset} + ${subTitle.offsetHeight}px)`;
+          // push main text up above subtitle
+          textBox.style.bottom = `calc(${mainOffset} + ${subTitle.offsetHeight}px)`;
 
-		} else {
-			textBox.style.top = '50%';
-			textBox.style.transform = 'translateY(-50%)';
-			textBox.style.bottom = 'auto';
+      } else {
+          textBox.style.top = '50%';
+          textBox.style.transform = 'translateY(-50%)';
+          textBox.style.bottom = 'auto';
 
-			subTitle.style.top = 'calc(50% + 80px)';
-			subTitle.style.bottom = 'auto';
-			subTitle.style.transform = 'none';
-		}
-	}
+          subTitle.style.top = 'calc(50% + 80px)';
+          subTitle.style.bottom = 'auto';
+          subTitle.style.transform = 'none';
+      }
+  }
 
-	// Initialize slideshow
-	slides.forEach(s => s.classList.remove('active'));
-	slides[0].classList.add('active');
-	textBox.innerHTML = captions[0];
-	subTitle.innerHTML = subCaptions[0];
-	setPosition(0);
+  // Initialize slideshow
+  slides.forEach(s => s.classList.remove('active'));
+  slides[0].classList.add('active');
+  textBox.innerHTML = captions[0];
+  subTitle.innerHTML = subCaptions[0];
+  setPosition(0);
 
-	let idx = 0;
-	setInterval(() => {
-		slides[idx].classList.remove('active');
-		idx = (idx + 1) % slides.length;
-		slides[idx].classList.add('active');
+  let idx = 0;
+  setInterval(() => {
+      slides[idx].classList.remove('active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('active');
 
-		textBox.style.opacity = '0';
-		subTitle.style.opacity = '0';
+      textBox.style.opacity = '0';
+      subTitle.style.opacity = '0';
 
-		setTimeout(() => {
-			textBox.innerHTML = captions[idx];
-			subTitle.innerHTML = subCaptions[idx];
-			setPosition(idx);
+      setTimeout(() => {
+          textBox.innerHTML = captions[idx];
+          subTitle.innerHTML = subCaptions[idx];
+          setPosition(idx);
 
-			textBox.style.opacity = '1';
-			subTitle.style.opacity = '1';
-		}, 600);
-	}, 6000);
+          textBox.style.opacity = '1';
+          subTitle.style.opacity = '1';
+      }, 600);
+  }, 6000);
 
-	window.addEventListener('resize', () => setPosition(idx));
+  window.addEventListener('resize', () => setPosition(idx));
 
 
-	(function () {
-		const base = { star: 105, plus: 75 };
+  (function () {
+      const base = { star: 105, plus: 75 };
 
-		const rates = {
-			USD: 1, EUR: 0.85, GBP: 0.75, BRL: 5, JPY: 157,
-			CNY: 7, CAD: 1.30, AUD: 1.50, INR: 80,
-			MXN: 20, CHF: 0.90, KRW: 1400, ZAR: 18
-		};
+      const rates = {
+          USD: 1, EUR: 0.85, GBP: 0.75, BRL: 5, JPY: 157,
+          CNY: 7, CAD: 1.30, AUD: 1.50, INR: 80,
+          MXN: 20, CHF: 0.90, KRW: 1400, ZAR: 18
+      };
 
-		const regionToCurrency = {
-			BR:"BRL", PT:"EUR", US:"USD", GB:"GBP", AU:"AUD", CA:"CAD",
-			ES:"EUR", FR:"EUR", DE:"EUR", JP:"JPY", CN:"CNY", IN:"INR",
-			MX:"MXN", CH:"CHF", KR:"KRW", ZA:"ZAR"
-		};
+      const regionToCurrency = {
+          BR:"BRL", PT:"EUR", US:"USD", GB:"GBP", AU:"AUD", CA:"CAD",
+          ES:"EUR", FR:"EUR", DE:"EUR", JP:"JPY", CN:"CNY", IN:"INR",
+          MX:"MXN", CH:"CHF", KR:"KRW", ZA:"ZAR"
+      };
 
-		function detectCurrency() {
-			try {
-				const lang = (navigator.languages && navigator.languages[0]) || navigator.language || "en-US";
-				const parts = lang.split('-');
-				if (parts.length > 1) {
-					const region = parts[1].toUpperCase();
-					if (regionToCurrency[region]) return regionToCurrency[region];
-				}
-				return "USD";
-			} catch (e) {
-				return "USD";
-			}
-		}
+      function detectCurrency() {
+          try {
+              const lang = (navigator.languages && navigator.languages[0]) || navigator.language || "en-US";
+              const parts = lang.split('-');
+              if (parts.length > 1) {
+                  const region = parts[1].toUpperCase();
+                  if (regionToCurrency[region]) return regionToCurrency[region];
+              }
+              return "USD";
+          } catch (e) {
+              return "USD";
+          }
+      }
 
-		function format(amount, currency) {
-			try {
-				return new Intl.NumberFormat(navigator.language || "en-US",
-					{ style: "currency", currency }).format(amount);
-			} catch (e) {
-				return amount.toFixed(2) + " " + currency;
-			}
-		}
+      function format(amount, currency) {
+          try {
+              return new Intl.NumberFormat(navigator.language || "en-US",
+                  { style: "currency", currency }).format(amount);
+          } catch (e) {
+              return amount.toFixed(2) + " " + currency;
+          }
+      }
 
-		function apply() {
-			const currency = detectCurrency();
-			const rate = rates[currency] || 1;
+      function apply() {
+          const currency = detectCurrency();
+          const rate = rates[currency] || 1;
 
-			const star = base.star * rate;
-			const plus = base.plus * rate;
+          const star = base.star * rate;
+          const plus = base.plus * rate;
 
-			const noDec = ["JPY", "KRW"];
+          const noDec = ["JPY", "KRW"];
 
-			if (noDec.includes(currency)) {
-				document.getElementById("starPrice").innerText = Math.round(star) + " " + currency;
-				document.getElementById("plusPrice").innerText = Math.round(plus) + " " + currency;
-			} else {
-				document.getElementById("starPrice").innerText = format(star, currency);
-				document.getElementById("plusPrice").innerText = format(plus, currency);
-			}
-		}
+          if (noDec.includes(currency)) {
+              document.getElementById("starPrice").innerText = Math.round(star) + " " + currency;
+              document.getElementById("plusPrice").innerText = Math.round(plus) + " " + currency;
+          } else {
+              document.getElementById("starPrice").innerText = format(star, currency);
+              document.getElementById("plusPrice").innerText = format(plus, currency);
+          }
+      }
 
-		apply();
-	})();
+      apply();
+  })();
 
-	// Consolidated QR Code and Link Logic
-	const qrCodes = {
-		us: "https://imgur.com/lFm4f4v.jpg",
-		pt: "https://imgur.com/lFm4f4v.jpg",
-		br: "https://i.imgur.com/oFX1NFT.jpg"
-	};
+  const qrCodes = {
+      us: "https://imgur.com/lFm4f4v.jpg",
+      pt: "https://imgur.com/lFm4f4v.jpg",
+      br: "https://i.imgur.com/oFX1NFT.jpg"
+  };
 
-	const qrLinks = {
-		br: "https://linknabio.gg/elio-fernando-mateus",
-		intl: "https://wise.com/pay/me/eliom98"
-	};
+  const lang = (navigator.language || navigator.userLanguage).toLowerCase();
+  let qr = qrCodes.us;
 
-	const lang = (navigator.language || navigator.userLanguage).toLowerCase();
+  if (lang.includes("pt-br")) qr = qrCodes.br;
+  else if (lang.includes("pt-pt")) qr = qrCodes.pt;
+  else if (lang.includes("en-us")) qr = qrCodes.us;
 
-	let qr = qrCodes.us;
-	let url = qrLinks.intl;
-
-	if (lang.includes("pt-br")) {
-		qr = qrCodes.br;
-		url = qrLinks.br;
-	} else if (lang.includes("pt-pt")) {
-		qr = qrCodes.pt;
-		url = qrLinks.intl;
-	}
-
-	const qrImg = document.getElementById("qr-image");
-	const qrLink = document.getElementById("qr-link");
-
-	if (qrImg) qrImg.src = qr;
-	if (qrLink) qrLink.href = url;
+  const qrImg = document.getElementById("qr-image");
+  if (qrImg) qrImg.src = qr;
 
 }); // END DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function () {
+
+  const qrCodes = {
+      us: "https://imgur.com/lFm4f4v.jpg",
+      pt: "https://imgur.com/lFm4f4v.jpg",
+      br: "https://i.imgur.com/oFX1NFT.jpg"
+  };
+
+  const qrLinks = {
+      br: "https://linknabio.gg/elio-fernando-mateus",
+      intl: "https://wise.com/pay/me/eliom98"
+  };
+
+  const lang = (navigator.language || navigator.userLanguage).toLowerCase();
+
+  let qr = qrCodes.us;
+  let url = qrLinks.intl;
+
+  if (lang.includes("pt-br")) {
+      qr = qrCodes.br;
+      url = qrLinks.br;
+  } else if (lang.includes("pt-pt")) {
+      qr = qrCodes.pt;
+      url = qrLinks.intl;
+  }
+
+  const qrImg = document.getElementById("qr-image");
+  const qrLink = document.getElementById("qr-link");
+
+  if (qrImg) qrImg.src = qr;
+  if (qrLink) qrLink.href = url;
+
+});
 </script>
 
 </body>
