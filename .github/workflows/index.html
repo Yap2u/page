@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>YAP2U.page – Private Online English Classes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YAP2U.page – Private Online English Classes</title>
 
-<style>
-  body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    width:100%;
-    margin:0;
-    padding:0;
-    line-height:1.5;
-    color:#333;
-  }
- 
-@media (max-width: 900px) {
+  <style>
+    body {
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      color: #333;
+    }
 
-  #hero {
-    height: 600px !important;   /* or 700px if you prefer */
-  }
+    /* Media query for smaller screens */
+    @media (max-width: 900px) {  /* You can adjust this threshold as needed */
+      
+      #hero {
+        height: 700px !important;  /* Smaller hero section for smaller screens */
+      }
 
-  #gs-slides .gs-slide {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
+      #gs-slides .gs-slide {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+      }
 
-  #slide-text {
-    font-size: 32px !important;
-    max-width: 100% !important;
-  }
+      #slide-text {
+        font-size: 28px !important;  /* Smaller text for better fit */
+        max-width: 100% !important;
+      }
 
-  .cta-btn {
-    font-size: 18px !important;
-    padding: 10px 18px !important;
-    width: 90% !important;
-  }
+      .cta-btn {
+        font-size: 16px !important;  /* Smaller button text */
+        padding: 10px 15px !important;  /* Adjust button padding */
+        width: 85% !important;  /* Make button width responsive */
+        margin: 0 auto;  /* Center button */
+      }
 
-  .price-box {
-    width: 100% !important;
-    margin: auto !important;
-  }
+      .price-box {
+        width: 100% !important;
+        margin: auto !important;
+      }
 
-  .grid-responsive {
-    display: block !important;
-  }
+      .grid-responsive {
+        display: block !important;
+      }
 
-}
+      /* Adjust general padding and margins for better mobile view */
+      .some-element {
+        padding: 10px 15px !important;
+        margin: 10px 0 !important;
+      }
+    }
+
+    /* Additional tweaks for screens less than 400px (extra small screens) */
+    @media (max-width: 400px) {
+      #hero {
+        height: 400px !important;  /* Reduce hero height even more for tiny screens */
+      }
+
+      #slide-text {
+        font-size: 24px !important;  /* Even smaller text */
+      }
+
+      .cta-btn {
+        font-size: 14px !important;  /* Even smaller button text */
+      }
+    }
 
     /* slideshow helper */
     .gs-slide {
@@ -98,7 +120,7 @@
       <img src="https://imgur.com/wuJTXIU.png?raw=true"
            alt="YAP2U.page"
            style="width:30px;height:30px;border-radius:50%;object-fit:cover;">
-      <h4 style="margin:0;">YAP2U.page</h4>
+      <h3 style="margin:0;">YAP2U.page</h3>
     </div>
     <div id="slide-text" style="
       position:absolute;
@@ -368,9 +390,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const subTitle = document.getElementById('sub-title');
 
   const captions = [
-    `<span style="font-weight:900;">Where every</span><br><span style="font-weight:300;">place meets</span><br><span style="font-weight:900;">every face</span>`,
-    `<span style="font-weight:300;">Make friends</span><br><span style="font-weight:900;">around the world</span>`,
-    `<span style="font-weight:300;">Prepare for</span><br><span style="font-weight:900;">TOEFL • IELTS</span><br><span style="font-weight:300;">Cambridge</span>`,
+    `<span style="font-weight:900;">Where every</span><br><span style="font-weight:300;">PLACE MEETS</span><br><span style="font-weight:900;">every face</span>`,
+    `<span style="font-weight:300;">Make friends</span><br><span style="font-weight:900;">AROUND</span><br><span style="font-weight:300;">the world</span>`,
+     `<span style="font-weight:300;">Prepare for</span><br><span style="font-weight:900;">TOEFL • IELTS</span><br>   <span style="font-weight:300;">Cambridge</span>`,
     `<span style="font-weight:900;">Go places</span><br><span style="font-weight:300;">Meet people</span><br><span style="font-weight:900;">Make memories</span>`
   ];
 
