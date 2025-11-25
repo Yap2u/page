@@ -15,27 +15,15 @@
     color:#333;
   }
 
-@media (max-width: 900px) {
-    #hero {
-        /* make it taller */
-        min-height: 700px !important;  /* adjust to your preferred height */
-        height: auto !important;
 
-        /* ensure it can grow and display properly */
-        display: block !important;
-        flex: none !important;
-        overflow: visible !important;
-
-        /* optional: background handling */
-        background-size: cover !important;   /* cover makes the image fill the area */
-        background-position: center center !important;
-        background-repeat: no-repeat !important;
-    }
-
-    /* make sure child elements don't collapse it */
-    #hero > * {
-        overflow: visible !important;
-    }
+ @media (max-width: 900px) {
+  #hero {
+    height: 90vh !important;      /* 90% of viewport height */
+    min-height: 700px !important; /* minimum for very small screens */
+    display: block !important;
+    overflow: visible !important;
+  }
+}
 }
 
   #gs-slides .gs-slide {
