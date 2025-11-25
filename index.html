@@ -6,157 +6,155 @@
   <title>YAP2U.page – Private Online English Classes</title>
 
   <style>
-    body {
-      font-family: Roboto, Arial, Helvetica, sans-serif;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      line-height: 1.5;
-      color: #333;
-    }
+    body {
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      color: #333;
+    }
 
-    /* Media query for smaller screens */
-    @media (max-width: 900px) {  /* You can adjust this threshold as needed */
-      
-      #hero {
-        height: 700px !important;  /* Smaller hero section for smaller screens */
-      }
+    /* Media query for smaller screens */
+    @media (max-width: 900px) {  /* You can adjust this threshold as needed */
+      
+      #hero {
+        height: 700px !important;  /* Smaller hero section for smaller screens */
+      }
 
-      #gs-slides .gs-slide {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-      }
+      #gs-slides .gs-slide {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+      }
 
-      #slide-text {
-        font-size: 28px !important;  /* Smaller text for better fit */
-        max-width: 100% !important;
-      }
+      #slide-text {
+        font-size: 28px !important;  /* Smaller text for better fit */
+        max-width: 100% !important;
+      }
 
-      .cta-btn {
-        font-size: 16px !important;  /* Smaller button text */
-        padding: 10px 15px !important;  /* Adjust button padding */
-        width: 85% !important;  /* Make button width responsive */
-        margin: 0 auto;  /* Center button */
-      }
+      .cta-btn {
+        font-size: 16px !important;  /* Smaller button text */
+        padding: 10px 15px !important;  /* Adjust button padding */
+        width: 85% !important;  /* Make button width responsive */
+        margin: 0 auto;  /* Center button */
+      }
 
-      .price-box {
-        width: 100% !important;
-        margin: auto !important;
-      }
+      .price-box {
+        width: 100% !important;
+        margin: auto !important;
+      }
 
-      .grid-responsive {
-        display: block !important;
-      }
+      .grid-responsive {
+        display: block !important;
+      }
 
-      /* Adjust general padding and margins for better mobile view */
-      .some-element {
-        padding: 10px 15px !important;
-        margin: 10px 0 !important;
-      }
-    }
+      /* Adjust general padding and margins for better mobile view */
+      .some-element {
+        padding: 10px 15px !important;
+        margin: 10px 0 !important;
+      }
+    }
 
-    /* Additional tweaks for screens less than 400px (extra small screens) */
-    @media (max-width: 400px) {
-      #hero {
-        height: 400px !important;  /* Reduce hero height even more for tiny screens */
-      }
+    /* Additional tweaks for screens less than 400px (extra small screens) */
+    @media (max-width: 400px) {
+      #hero {
+        height: 400px !important;  /* Reduce hero height even more for tiny screens */
+      }
 
-      #slide-text {
-        font-size: 24px !important;  /* Even smaller text */
-      }
+      #slide-text {
+        font-size: 24px !important;  /* Even smaller text */
+      }
 
-      .cta-btn {
-        font-size: 14px !important;  /* Even smaller button text */
-      }
-    }
+      .cta-btn {
+        font-size: 14px !important;  /* Even smaller button text */
+      }
+    }
 
-    /* slideshow helper */
-    .gs-slide {
-      position:absolute;
-      width:100%; height:100%;
-      top:0; left:0;
-      object-fit:cover;
-      opacity:0;
-      transition:opacity 1.6s ease-in-out;
-      z-index:1;
-    }
-    .gs-slide.active { opacity:1; z-index:2; }
-  </style>
-</head>
-<body>
+    /* slideshow helper */
+    .gs-slide {
+      position:absolute;
+      width:100%; height:100%;
+      top:0; left:0;
+      object-fit:cover;
+      opacity:0;
+      transition:opacity 1.6s ease-in-out;
+      z-index:1;
+    }
+    .gs-slide.active { opacity:1; z-index:2; }
+  </style>
 
 
-  <div id="hero" style="position:relative; width:100%; height:100vh; overflow:hidden;">
 
-    <div id="gs-slides" style="position:absolute; top:0; left:0; width:100%; height:100%;">
-        <img class="gs-slide active"
-            src="https://imgur.com/pkCXFTA.jpg"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-        <img class="gs-slide"
-            src="https://imgur.com/MDx3AF7.jpg"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-        <img class="gs-slide"
-            src="https://imgur.com/scAuBWR.jpg"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
-        <img class="gs-slide"
-            src="https://imgur.com/Dqi2aIe.jpg"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+  <div id="hero" style="position:relative;width:100%;height:520px;overflow:hidden;border-radius:10px;">
+
+    <div id="gs-slides" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;">
+      <img class="gs-slide active"
+           src="https://imgur.com/pkCXFTA.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+      <img class="gs-slide"
+           src="https://imgur.com/MDx3AF7.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+      <img class="gs-slide"
+           src="https://imgur.com/scAuBWR.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+      <img class="gs-slide"
+           src="https://imgur.com/Dqi2aIe.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
     </div>
 
-    <div style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        padding:25px 30px;
-        display:flex;
-        align-items:center;
-        gap:12px;
-        z-index:5;
-        color:white;
-        font-weight:700;
-        text-shadow:0 0 8px rgba(0,0,0,0.8);
+     <div style="
+       position:absolute;
+       top:0;
+       left:0;
+       width:100%;
+       padding:25px 30px;
+       display:flex;
+       align-items:center;
+       gap:12px;
+       z-index:5;
+       color:white;
+       font-weight:700;
+       text-shadow:0 0 8px rgba(0,0,0,0.8);
     ">
-        <img src="https://imgur.com/wuJTXIU.png?raw=true"
-            alt="YAP2U.page"
-            style="width:30px;height:30px;border-radius:50%;object-fit:cover;">
-        <h3 style="margin:0;">YAP2U.page</h3>
+      <img src="https://imgur.com/wuJTXIU.png?raw=true"
+           alt="YAP2U.page"
+           style="width:30px;height:30px;border-radius:50%;object-fit:cover;">
+      <h3 style="margin:0;">YAP2U.page</h3>
     </div>
-
     <div id="slide-text" style="
-        position:absolute;
-        top:35%; /* Fixed for desktop view */
-        transform:translateY(-50%);
-        max-width:420px;
-        font-size:48px;
-        color:white;
-        font-weight:700;
-        line-height:1.1;
-        text-shadow:0 0 8px rgba(0,0,0,0.8);
-        transition:opacity .6s;
-        opacity:1;
-        z-index:4;
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      max-width:420px;
+      font-size:48px;
+      color:white;
+      font-weight:700;
+      line-height:1.1;
+      text-shadow:0 0 8px rgba(0,0,0,0.8);
+      transition:opacity .6s;
+      opacity:1;
+      z-index:4;
     "></div>
 
     <div id="sub-title" style="
-        position:absolute;
-        top:calc(35% + 80px); /* Fixed for desktop view */
-        font-size:26px;
-        color:white;
-        text-shadow:0 0 8px rgba(0,0,0,0.8);
-        transition:opacity .6s;
-        opacity:1;
-        z-index:4;
+      position:absolute;
+      top:calc(50% + 80px);
+      font-size:26px;
+      color:white;
+      text-shadow:0 0 8px rgba(0,0,0,0.8);
+      transition:opacity .6s;
+      opacity:1;
+      z-index:4;
     "></div>
 
-</div> 
-<div style="text-align:center;margin-top:50px;">
-    <a href="https://wa.me/19086742809" target="_blank" class="cta-btn"
-       style="background:#d08d00;color:#fff;padding:12px 24px;font-size:20px;font-weight:700;border-radius:10px;text-decoration:none;display:inline-block;">
-      SCHEDULE YOUR FREE TRIAL CLASS
-    </a>
-  </div>
+  </div>
+  <div style="text-align:center;margin-top:50px;">
+    <a href="https://wa.me/19086742809" target="_blank" class="cta-btn"
+       style="background:#d08d00;color:#fff;padding:12px 24px;font-size:20px;font-weight:700;border-radius:10px;text-decoration:none;display:inline-block;">
+      SCHEDULE YOUR FREE TRIAL CLASS
+    </a>
+  </div>
 
   <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Focus on conversation, without forgetting the grammar.</h2>
 
