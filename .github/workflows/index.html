@@ -16,7 +16,26 @@
   }
 
   @media (max-width:900px) {
-    #hero { height:110vh !important; min-height:900px !important; }
+    #hero {
+  width: 100%;
+  height: 520px;              /* Desktop */
+  min-height: 900px;          /* Ensures full stretch on mobile */
+  display: block;
+}
+
+@media (max-width: 900px) 
+{
+  #hero {
+    height: 110vh !important; /* FULL SCREEN HEIGHT on mobile */
+    min-height: 900px !important;
+  }
+
+  #gs-slides .gs-slide {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}
     #slide-text { font-size:36px !important; max-width:92% !important; padding:0 16px !important; }
 
     #slide-text, #sub-title {
