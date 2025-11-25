@@ -15,11 +15,10 @@
       color: #333;
     }
 
-    /* Media query for smaller screens */
-    @media (max-width: 900px) {  /* You can adjust this threshold as needed */
-      
+    /* Media query for screens smaller than 900px */
+    @media (max-width: 900px) { 
       #hero {
-        height: 700px !important;  /* Smaller hero section for smaller screens */
+        height: 600px !important; /* Adjusting hero section for smaller screens */
       }
 
       #gs-slides .gs-slide {
@@ -29,15 +28,15 @@
       }
 
       #slide-text {
-        font-size: 28px !important;  /* Smaller text for better fit */
+        font-size: 28px !important; /* Adjust font size for readability */
         max-width: 100% !important;
       }
 
       .cta-btn {
-        font-size: 16px !important;  /* Smaller button text */
-        padding: 10px 15px !important;  /* Adjust button padding */
-        width: 85% !important;  /* Make button width responsive */
-        margin: 0 auto;  /* Center button */
+        font-size: 16px !important; /* Smaller button text */
+        padding: 10px 15px !important; /* Adjust padding */
+        width: 85% !important; /* Ensure button is responsive */
+        margin: 0 auto; /* Center the button */
       }
 
       .price-box {
@@ -49,41 +48,45 @@
         display: block !important;
       }
 
-      /* Adjust general padding and margins for better mobile view */
+      /* Adjust general padding and margins */
       .some-element {
         padding: 10px 15px !important;
         margin: 10px 0 !important;
       }
     }
 
-    /* Additional tweaks for screens less than 400px (extra small screens) */
+    /* Additional tweaks for extra small screens under 400px */
     @media (max-width: 400px) {
       #hero {
-        height: 400px !important;  /* Reduce hero height even more for tiny screens */
+        height: 400px !important; /* Reduce hero height for very small screens */
       }
 
       #slide-text {
-        font-size: 24px !important;  /* Even smaller text */
+        font-size: 22px !important; /* Even smaller text for very small screens */
       }
 
       .cta-btn {
-        font-size: 14px !important;  /* Even smaller button text */
+        font-size: 14px !important; /* Make button text smaller for very small screens */
       }
     }
 
-    /* slideshow helper */
+    /* Slideshow helper */
     .gs-slide {
-      position:absolute;
-      width:100%; height:100%;
-      top:0; left:0;
-      object-fit:cover;
-      opacity:0;
-      transition:opacity 1.6s ease-in-out;
-      z-index:1;
+      position: absolute;
+      width: 100%; height: 100%;
+      top: 0; left: 0;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1.6s ease-in-out;
+      z-index: 1;
     }
-    .gs-slide.active { opacity:1; z-index:2; }
-  </style>
 
+    .gs-slide.active {
+      opacity: 1;
+      z-index: 2;
+    }
+
+  </style>
 
 
   <div id="hero" style="position:relative;width:100%;height:520px;overflow:hidden;border-radius:10px;">
