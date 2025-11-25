@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>YAP2U.page – Private Online English Classes</title>
+
+<style>
+  body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  /* Mobile-specific styles */
 @media (max-width: 900px) {
   #hero {
     width: 100%;
@@ -38,3 +56,533 @@
     display: block !important;
   }
 }
+
+  /* Default slideshow styles */
+  .gs-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.6s ease-in-out;
+    z-index: 1;
+  }
+
+  .gs-slide.active {
+    opacity: 1;
+    z-index: 2;
+  }
+</style>
+
+  <div id="hero" style="position:relative;width:100%;height:520px;overflow:hidden;border-radius:10px;">
+
+    <div id="gs-slides" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;">
+      <img class="gs-slide active"
+           src="https://imgur.com/pkCXFTA.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+      <img class="gs-slide"
+           src="https://imgur.com/MDx3AF7.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+      <img class="gs-slide"
+           src="https://imgur.com/scAuBWR.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+      <img class="gs-slide"
+           src="https://imgur.com/Dqi2aIe.jpg"
+           style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+    </div>
+
+     <div style="
+       position:absolute;
+       top:0;
+       left:0;
+       width:100%;
+       padding:25px 30px;
+       display:flex;
+       align-items:center;
+       gap:12px;
+       z-index:5;
+       color:white;
+       font-weight:700;
+       text-shadow:0 0 8px rgba(0,0,0,0.8);
+    ">
+      <img src="https://imgur.com/wuJTXIU.png?raw=true"
+           alt="YAP2U.page"
+           style="width:30px;height:30px;border-radius:50%;object-fit:cover;">
+      <h4 style="margin:0;">YAP2U.page</h4>
+    </div>
+    <div id="slide-text" style="
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      max-width:420px;
+      font-size:48px;
+      color:white;
+      font-weight:700;
+      line-height:1.1;
+      text-shadow:0 0 8px rgba(0,0,0,0.8);
+      transition:opacity .6s;
+      opacity:1;
+      z-index:4;
+    "></div>
+
+    <div id="sub-title" style="
+      position:absolute;
+      top:calc(50% + 80px);
+      font-size:26px;
+      color:white;
+      text-shadow:0 0 8px rgba(0,0,0,0.8);
+      transition:opacity .6s;
+      opacity:1;
+      z-index:4;
+    "></div>
+
+  </div>
+  <div style="text-align:center;margin-top:50px;">
+    <a href="https://wa.me/19086742809" target="_blank" class="cta-btn"
+       style="background:#d08d00;color:#fff;padding:12px 24px;font-size:20px;font-weight:700;border-radius:10px;text-decoration:none;display:inline-block;">
+      SCHEDULE YOUR FREE TRIAL CLASS
+    </a>
+  </div>
+
+  <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Focus on conversation, without forgetting the grammar.</h2>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:50px;">
+
+    <div class="price-box" itemscope itemtype="http://schema.org/Offer"
+         style="width:300px;background:#fdf7ef;border:1px solid #eee;padding:20px;border-radius:14px;text-align:center;">
+      <h3 style="margin:0;font-weight:700;" itemprop="name">Online 💫 STAR</h3>
+      <div id="starPrice" style="margin-top:10px;font-size:36px;font-weight:800;">$105.00</div>
+      <div style="color:#666;font-size:14px;margin-top:8px;">4-Hour Package</div>
+      <meta itemprop="priceCurrency" content="USD" />
+      <meta itemprop="price" content="105.00" />
+      <meta itemprop="priceValidUntil" content="2025-12-31" />
+      <link itemprop="availability" href="http://schema.org/InStock" />
+      <meta itemprop="url" content="https://yap2u.page/online-star" />
+    </div>
+
+    <div class="price-box" itemscope itemtype="http://schema.org/Offer"
+         style="width:300px;background:#eef7ff;border:1px solid #eee;padding:20px;border-radius:14px;text-align:center;">
+      <h3 style="margin:0;font-weight:700;" itemprop="name">Online ➕ PLUS</h3>
+      <div id="plusPrice" style="margin-top:10px;font-size:36px;font-weight:800;">$75.00</div>
+      <div style="color:#666;font-size:14px;margin-top:8px;">Monthly (1 class per week, Biannual plan)</div>
+      <meta itemprop="priceCurrency" content="USD" />
+      <meta itemprop="price" content="75.00" />
+      <meta itemprop="priceValidUntil" content="2025-12-31" />
+      <link itemprop="availability" href="http://schema.org/InStock" />
+      <meta itemprop="url" content="https://yap2u.page/online-plus" />
+    </div>
+ </div>
+
+  <p style="text-align:center;margin-top:50px;font-size:16px;color:#333;">
+    Trusted by students using Google • Microsoft • Apple platforms<br>
+  </p>
+
+  <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Flexibility. English on the go.</h2>
+
+  <div class="grid-responsive" style="margin-top:50px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:50px;">
+
+    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;text-align:center;">
+      <img src="https://imgur.com/JOb6a9S.png?raw=true"
+           alt="Home / Office"
+           style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
+      <h3 style="text-align:center;">Home / Office</h3>
+      <p>Your Private Online English Classes come to you! Choose the best day and time, and enjoy your lessons conveniently from home or work</p>
+    </div>
+
+    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;text-align:center;">
+      <img src="https://imgur.com/1zMoxBc.png?raw=true"
+           alt="Online Classes"
+           style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
+      <h3 style="text-align:center;">Online Private Classes</h3>
+      <p>In your Private Online English Classes, you'll feel just like you're in a real classroom without having to leave your home or office, learning in a fun and enjoyable way.</p>
+    </div>
+
+    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;text-align:center;">
+      <img src="https://imgur.com/JOb6a9S.png?raw=true"
+           alt="Coffee Shops"
+           style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
+      <h3 style="text-align:center;">Coffee Shops</h3>
+      <p>Different settings can spark engaging conversations and create a warm, relaxed atmosphere that encourages natural dialogue and self-expression.</p>
+    </div>
+
+  </div>
+
+  <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Types of Plans</h2>
+
+  <div class="grid-responsive" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px;margin-top:20px;">
+
+    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;">
+      <h3 style="margin-top:30px;text-align:center;font-size:24px;font-weight:900;"> Star 💫 Plan</h3>
+      <div style="margin-top:20px;text-align:center;font-size:16px;color:#2b542c;font-weight:700;">FLEXIBLE HOURS</div>
+      <p>Purchase a package of hours and schedule your Classes, according to your availability. Do you want 2 English classes per week? One starting at 8:00 on Tuesday and the other at 2:00 PM on Friday? Yes, you can!</p>
+      <p><strong>PLANS:</strong> 4 • 6 • 12 • 24 Hours • IELTS • TOEFL • CAMBRIGDE </p>
+      <p style="margin-top:20px;text-align:center;font-size:16px;color:#2b542c;font-weight:700;">HOURLY RATE</p>
+    </div>
+
+    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;">
+      <h3 style="margin-top:30px;text-align:center;font-size:24px;font-weight:900;"> Plus ➕ Plan</h3>
+      <div style="margin-top:20px;text-align:center;font-size:16px;color:#b88900;font-weight:700;">FIXED DAY AND TIME</div>
+      <p>One English Class per week, lasting one hour, always on the same day of the week. Once a week you'll practice your speaking, and during the rest of the week you might work on your listening through activities.</p>
+      <p><strong>PLANS:</strong> Quarterly • Biannual • Annual</p>
+      <p style="margin-top:20px;text-align:center;font-size:16px;color:#b88900;font-weight:700;">DISCOUNTS FOR LONG PLANS</p>
+    </div>
+
+  </div>
+<div style="border: 0px solid #ccc; padding: 15px; border-radius: 20px; max-width: 900px; margin: 30px auto; text-align: center; font-family: Arial, sans-serif;">
+  <h3 style="margin-bottom: 10px;">We Accept:</h3>
+  <div style="display: flex; justify-content: center; gap: 30px; align-items: center; flex-wrap: wrap;">
+    <!-- Hosted logos -->
+    <img src="https://imgur.com/9ZfcIeP.jpg" alt="Visa" style="height: 60px;">
+    <img src="https://imgur.com/d02POEY.jpg" alt="MasterCard" style="height: 60px;">
+    <img src="https://imgur.com/UcmIaMk.jpg" alt="Pix" style="height: 50px;">
+  </div>
+  <p style="margin-top: 10px; font-size: 14px;">We accept all major debit, credit cards, and Pix.</p>
+</div>
+</div>
+
+  <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Native and Experienced Teachers</h2>
+
+<p style="margin:30px 20px;">
+  Our database features highly qualified native teachers with extensive experience in English instruction. 
+  Each lesson is tailored to your goals, combining engaging conversation practice with effective, 
+  research-based teaching methods.
+</p>
+
+<p style="margin:15px 20px;">
+  Our team also offers specialized instruction in 
+  <strong>Medical English, Legal English, Hospitality and Tourism English, Exam Preparation, 
+  and Teen-inspired lessons</strong>, allowing learners to focus on 
+  industry-specific language and real-world communication.
+</p>
+
+  <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">🎓 Honor Roll</h2>
+
+  <div class="grid-responsive" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:40px;margin-top:50px;">
+
+    <div style="border:0px solid #eee;padding:20px;border-radius:12px;text-align:center;">
+      <img src="https://imgur.com/GdXOqGU.jpg?raw=true"
+           alt="Viviane Ramalho"
+           style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
+      <h3 style="margin-top:0;">Viviane Ramalho</h3>
+      <div style="color:#777;font-size:14px;margin-bottom:8px;">English for Tourism</div>
+      <p>I really love Yap2u’s lessons. My teacher is VERY patient, masters the material very well, and has excellent teaching skills. Besides that, they have a gift for boosting my self-confidence. I recommend it a million times!</p>
+    </div>
+
+    <div style="border:0px solid #eee;padding:20px;border-radius:12px;text-align:center;">
+      <img src="https://imgur.com/Wf0kmjO.jpg?raw=true"
+           alt="Roberto Kant de Lima"
+           style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
+      <h3 style="margin-top:0;">🎗️Roberto Kant de Lima</h3>
+      <div style="color:#777;font-size:14px;margin-bottom:8px;">Professor and Anthropologist</div>
+      <p>English is very important. I have many trips abroad, and Yap2u’s lessons are always about a different topic, which makes me confident to talk about anything. Thank you!</p>
+    </div>
+
+    <div style="border:0px solid #eee;padding:20px;border-radius:12px;text-align:center;">
+      <img src="https://imgur.com/hq5hqqj.jpg?raw=true"
+           alt="Bernardo Pimentel"
+           style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
+      <h3 style="margin-top:0;">Bernardo Pimentel</h3>
+      <div style="color:#777;font-size:14px;margin-bottom:8px;">Business English</div>
+      <p>Yap2u has a great methodology. I’ve been learning a lot from their dynamic lessons, full of videos and excellent texts. Each class brings a new topic to discuss. Thank you very much!</p>
+    </div>
+
+</div>
+
+<div style="text-align:center;margin-top:20px;">
+  <a href="https://wa.me/19086742809" target="_blank" class="cta-btn"
+     style="background:#d08d00;color:#fff;padding:12px 24px;font-size:20px;font-weight:700;border-radius:10px;text-decoration:none;display:inline-block;">
+    SCHEDULE YOUR FREE TRIAL CLASS
+  </a>
+
+<div style="text-align:center; color:#555; font-size:14px; margin-top:10px;">
+
+  <div style="margin-bottom:10px;">
+    Contact us by
+  </div>
+
+  <div style="display:flex; justify-content:center; gap:20px; margin-bottom:10px;">
+
+    <a href="https://www.facebook.com/Yap2u" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 24 24" fill="#1877F2">
+        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.093 10.125 24v-8.437H7.078v-3.49h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.953.925-1.953 1.873v2.24h3.328l-.532 3.49h-2.796V24C19.612 23.093 24 18.1 24 12.073z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.instagram.com/Yap2u" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 24 24" fill="#E1306C">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.427.403a4.92 4.92 0 011.767 1.042 4.92 4.92 0 011.042 1.767c.163.457.35 1.257.403 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.427a4.902 4.902 0 01-1.042 1.767 4.902 4.902 0 01-1.767 1.042c-.457.163-1.257.35-2.427.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.427-.403a4.902 4.902 0 01-1.767-1.042 4.902 4.902 0 01-1.042-1.767c-.163-.457-.35-1.257-.403-2.427C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.427a4.92 4.92 0 011.042-1.767 4.92 4.92 0 011.767-1.042c.457-.163 1.257-.35 2.427-.403C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.735 0 8.332.012 7.052.07 5.773.127 4.65.304 3.678.635 2.64.978 1.75 1.557 1 2.308.25 3.058-.33 3.948.014 4.986c.331.972.508 2.095.565 3.374C.988 9.668 1 10.071 1 12s-.012 2.332-.07 3.612c-.057 1.279-.234 2.402-.565 3.374-.344 1.038.572 1.928 1.322 2.678.75.75 1.64 1.066 2.678 1.322.972.331 2.095.508 3.374.565C8.332 23.988 8.735 24 12 24s3.668-.012 4.948-.07c1.279-.057 2.402-.234 3.374-.565 1.038-.344 1.928-.572 2.678-1.322.75-.75 1.066-1.64 1.322-2.678.331-.972.508-2.095.565-3.374.058-1.28.07-1.683.07-4.948s-.012-3.668-.07-4.948c-.057-1.279-.234-2.402-.565-3.374-.344-1.038-.572-1.928-1.322-2.678-.75-.75-1.64-1.066-2.678-1.322C19.35.304 18.227.127 16.948.07 15.668.012 15.265 0 12 0z"/>
+        <circle cx="12" cy="12" r="3.6"/>
+        <circle cx="18.406" cy="5.594" r="1.44"/>
+      </svg>
+    </a>
+
+    <a href="mailto:yap2u.page@gmail.com" style="display:flex; align-items:center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#555" viewBox="0 0 24 24">
+        <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 5.333-8-5.333V6h16zm-16 12V8.156l8 5.333 8-5.333L20.002 18H4z"/>
+      </svg>
+    </a>
+
+
+</div>
+
+<h2 style="margin-top:50px; text-align:center; font-size:28px; font-weight:700;">
+  Special Thanks to Our Sponsor
+</h2>
+
+<div style="margin-top:20px; text-align:center; padding:20px; border:0px solid #eee; border-radius:12px; display:inline-block;">
+
+  <a href="https://www.facebook.com/frank.vacca" target="_blank" style="display:inline-block;">
+    <img src="https://imgur.com/V6br8WC.jpg"
+         alt="Frank Vacca"
+         style="width:70px; height:70px; border-radius:50%; object-fit:cover; margin-bottom:12px; box-shadow:0 0 8px rgba(0,0,0,0.2); transition:transform 0.25s ease;">
+  </a>
+
+  <h3 style="margin:0; font-weight:800;">🏅 Frank Vacca</h3>
+
+  </div>
+
+</div>
+
+
+  <p style="color:#555;font-size:15px;margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto;">
+    Special thanks to our friend and supporter, Frank Vacca. His continuous support helps YAP2U.page grow and reach students around the world.
+  </p>
+
+ </div>
+
+<div id="support-box" style="display:flex; align-items:center; gap:20px; padding:20px; border:2px solid #4CAF50; border-radius:10px; background-color:#FAFAFA; max-width:500px; margin:auto; font-family:Arial,sans-serif;">
+  
+
+  <a id="qr-link" href="#" target="_blank" style="display:inline-block;">
+    <img id="qr-image" src="" alt="QR Code" style="width:120px; height:120px; border-radius:10px; cursor:pointer;">
+  </a>
+
+  <div style="flex:1; text-align:center;">
+    <h3 style="color:#4CAF50; margin:0;">Become a Sponsor!</h3>
+    <p style="margin:5px 0;">Use your bank's QR code scanner or click the QR code to become a sponsor.</p>
+    <p style="font-size:14px; color:#555; margin:0;">Thank you for helping me create more content!</p>
+  </div>
+
+</div>
+</div>
+
+<p style="text-align: center; font-size: 12px; color: #888; margin-top: 10px;">
+  © 2025 YAP2U.page. All rights reserved.
+</p>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+   const slides = Array.from(document.querySelectorAll('#gs-slides .gs-slide'));
+  const textBox = document.getElementById('slide-text');
+  const subTitle = document.getElementById('sub-title');
+
+  const captions = [
+    `<span style="font-weight:900;">Where every</span><br><span style="font-weight:300;">place meets</span><br><span style="font-weight:900;">every face</span>`,
+    `<span style="font-weight:300;">Make friends</span><br><span style="font-weight:900;">around the world</span>`,
+    `<span style="font-weight:300;">Prepare for</span><br><span style="font-weight:900;">TOEFL • IELTS</span><br><span style="font-weight:300;">Cambridge</span>`,
+    `<span style="font-weight:900;">Go places</span><br><span style="font-weight:300;">Meet people</span><br><span style="font-weight:900;">Make memories</span>`
+  ];
+
+  const subCaptions = [
+    `<strong style="color:#ff3b3b;">Business</strong>`,
+    `<strong style="color:#3b7bff;">Friendship</strong>`,
+    `<strong style="color:#ff3b3b;">Education</strong>`,
+    `<strong style="color:#3b7bff;">Travel</strong>`
+  ];
+
+  const positions = ['left', 'right', 'left', 'right'];
+
+  function setPosition(i) {
+      const pos = positions[i];
+      const isMobile = window.innerWidth <= 900;
+      const mainOffset = '40px';
+      const subOffset = '30px';
+
+      // Horizontal positioning
+      if (pos === 'left') {
+          textBox.style.left = mainOffset;
+          textBox.style.right = 'auto';
+          textBox.style.textAlign = 'left';
+
+          subTitle.style.left = mainOffset;
+          subTitle.style.right = 'auto';
+          subTitle.style.textAlign = 'left';
+      } else {
+          textBox.style.right = mainOffset;
+          textBox.style.left = 'auto';
+          textBox.style.textAlign = 'right';
+
+          subTitle.style.right = mainOffset;
+          subTitle.style.left = 'auto';
+          subTitle.style.textAlign = 'right';
+      }
+
+      // Vertical positioning
+      if (isMobile) {
+          textBox.style.bottom = mainOffset;
+          textBox.style.top = 'auto';
+          textBox.style.transform = 'none';
+
+          subTitle.style.bottom = subOffset;
+          subTitle.style.top = 'auto';
+          subTitle.style.transform = 'none';
+
+          // push main text up above subtitle
+          textBox.style.bottom = `calc(${mainOffset} + ${subTitle.offsetHeight}px)`;
+
+      } else {
+          textBox.style.top = '50%';
+          textBox.style.transform = 'translateY(-50%)';
+          textBox.style.bottom = 'auto';
+
+          subTitle.style.top = 'calc(50% + 80px)';
+          subTitle.style.bottom = 'auto';
+          subTitle.style.transform = 'none';
+      }
+  }
+
+  // Initialize slideshow
+  slides.forEach(s => s.classList.remove('active'));
+  slides[0].classList.add('active');
+  textBox.innerHTML = captions[0];
+  subTitle.innerHTML = subCaptions[0];
+  setPosition(0);
+
+  let idx = 0;
+  setInterval(() => {
+      slides[idx].classList.remove('active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('active');
+
+      textBox.style.opacity = '0';
+      subTitle.style.opacity = '0';
+
+      setTimeout(() => {
+          textBox.innerHTML = captions[idx];
+          subTitle.innerHTML = subCaptions[idx];
+          setPosition(idx);
+
+          textBox.style.opacity = '1';
+          subTitle.style.opacity = '1';
+      }, 600);
+  }, 6000);
+
+  window.addEventListener('resize', () => setPosition(idx));
+
+
+  (function () {
+      const base = { star: 105, plus: 75 };
+
+      const rates = {
+          USD: 1, EUR: 0.85, GBP: 0.75, BRL: 5, JPY: 157,
+          CNY: 7, CAD: 1.30, AUD: 1.50, INR: 80,
+          MXN: 20, CHF: 0.90, KRW: 1400, ZAR: 18
+      };
+
+      const regionToCurrency = {
+          BR:"BRL", PT:"EUR", US:"USD", GB:"GBP", AU:"AUD", CA:"CAD",
+          ES:"EUR", FR:"EUR", DE:"EUR", JP:"JPY", CN:"CNY", IN:"INR",
+          MX:"MXN", CH:"CHF", KR:"KRW", ZA:"ZAR"
+      };
+
+      function detectCurrency() {
+          try {
+              const lang = (navigator.languages && navigator.languages[0]) || navigator.language || "en-US";
+              const parts = lang.split('-');
+              if (parts.length > 1) {
+                  const region = parts[1].toUpperCase();
+                  if (regionToCurrency[region]) return regionToCurrency[region];
+              }
+              return "USD";
+          } catch (e) {
+              return "USD";
+          }
+      }
+
+      function format(amount, currency) {
+          try {
+              return new Intl.NumberFormat(navigator.language || "en-US",
+                  { style: "currency", currency }).format(amount);
+          } catch (e) {
+              return amount.toFixed(2) + " " + currency;
+          }
+      }
+
+      function apply() {
+          const currency = detectCurrency();
+          const rate = rates[currency] || 1;
+
+          const star = base.star * rate;
+          const plus = base.plus * rate;
+
+          const noDec = ["JPY", "KRW"];
+
+          if (noDec.includes(currency)) {
+              document.getElementById("starPrice").innerText = Math.round(star) + " " + currency;
+              document.getElementById("plusPrice").innerText = Math.round(plus) + " " + currency;
+          } else {
+              document.getElementById("starPrice").innerText = format(star, currency);
+              document.getElementById("plusPrice").innerText = format(plus, currency);
+          }
+      }
+
+      apply();
+  })();
+
+  const qrCodes = {
+      us: "https://imgur.com/lFm4f4v.jpg",
+      pt: "https://imgur.com/lFm4f4v.jpg",
+      br: "https://i.imgur.com/oFX1NFT.jpg"
+  };
+
+  const lang = (navigator.language || navigator.userLanguage).toLowerCase();
+  let qr = qrCodes.us;
+
+  if (lang.includes("pt-br")) qr = qrCodes.br;
+  else if (lang.includes("pt-pt")) qr = qrCodes.pt;
+  else if (lang.includes("en-us")) qr = qrCodes.us;
+
+  const qrImg = document.getElementById("qr-image");
+  if (qrImg) qrImg.src = qr;
+
+}); // END DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function () {
+
+  const qrCodes = {
+      us: "https://imgur.com/lFm4f4v.jpg",
+      pt: "https://imgur.com/lFm4f4v.jpg",
+      br: "https://i.imgur.com/oFX1NFT.jpg"
+  };
+
+  const qrLinks = {
+      br: "https://linknabio.gg/elio-fernando-mateus",
+      intl: "https://wise.com/pay/me/eliom98"
+  };
+
+  const lang = (navigator.language || navigator.userLanguage).toLowerCase();
+
+  let qr = qrCodes.us;
+  let url = qrLinks.intl;
+
+  if (lang.includes("pt-br")) {
+      qr = qrCodes.br;
+      url = qrLinks.br;
+  } else if (lang.includes("pt-pt")) {
+      qr = qrCodes.pt;
+      url = qrLinks.intl;
+  }
+
+  const qrImg = document.getElementById("qr-image");
+  const qrLink = document.getElementById("qr-link");
+
+  if (qrImg) qrImg.src = qr;
+  if (qrLink) qrLink.href = url;
+
+});
+</script>
+
+</body>
+</html>
