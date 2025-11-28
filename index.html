@@ -95,10 +95,36 @@
   }
   
   }
-
   .grid-responsive {
-    display: block !important;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
   }
+
+  .card {
+    border: 0px solid #eee;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+
+  .card h3 {
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    line-height: 1.5;
+  }
+  
 }
 
   .gs-slide {
@@ -245,33 +271,27 @@
 
   <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Flexibility. English on the go.</h2>
 
-  <div class="grid-responsive" style="margin-top:50px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:50px;">
+<div class="grid-responsive">
 
-    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;text-align:center;">
-      <img src="https://imgur.com/JOb6a9S.png?raw=true"
-           alt="Home / Office"
-           style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
-      <h3 style="text-align:center;">Home / Office</h3>
-      <p>Your Private Online English Classes come to you! Choose the best day and time, and enjoy your lessons conveniently from home or work</p>
-    </div>
-
-    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;text-align:center;">
-      <img src="https://imgur.com/1zMoxBc.png?raw=true"
-           alt="Online Classes"
-           style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
-      <h3 style="text-align:center;">Online Private Classes</h3>
-      <p>In your Private Online English Classes, you'll feel just like you're in a real classroom without having to leave your home or office, learning in a fun and enjoyable way.</p>
-    </div>
-
-    <div style="border:1px solid:#eee;padding:20px;border-radius:12px;text-align:center;">
-      <img src="https://imgur.com/JOb6a9S.png?raw=true"
-           alt="Coffee Shops"
-           style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-bottom:12px;">
-      <h3 style="text-align:center;">Coffee Shops</h3>
-      <p>Different settings can spark engaging conversations and create a warm, relaxed atmosphere that encourages natural dialogue and self-expression.</p>
-    </div>
-
+  <div class="card">
+    <img src="https://imgur.com/JOb6a9S.png?raw=true" alt="Home / Office">
+    <h3>Home / Office</h3>
+    <p>Your Private Online English Classes come to you! Choose the best day and time, and enjoy your lessons conveniently from home or work.</p>
   </div>
+
+  <div class="card">
+    <img src="https://imgur.com/1zMoxBc.png?raw=true" alt="Online Classes">
+    <h3>Online Private Classes</h3>
+    <p>In your Private Online English Classes, you'll feel just like you're in a real classroom without having to leave your home or office, learning in a fun and enjoyable way.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://imgur.com/JOb6a9S.png?raw=true" alt="Coffee Shops">
+    <h3>Coffee Shops</h3>
+    <p>Different settings can spark engaging conversations and create a warm, relaxed atmosphere that encourages natural dialogue and self-expression.</p>
+  </div>
+
+</div>
 
   <h2 style="margin-top:50px;text-align:center;font-size:32px;font-weight:700;">Types of Plans</h2>
 
