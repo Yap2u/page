@@ -83,7 +83,24 @@
     nav .main-logo img { margin-top: 10px; width: 180px; height: auto; transition-duration: .4s; }
     nav .logo-tagline { vertical-align: middle; display: table-cell; }
     nav .logo-tagline div { height: 33px; border-left: red 2px solid; padding-left: 10px; color: #fff; font-size: 18px; margin-top: 3px; line-height: 33px; }
-    nav .top-whatsapp { text-align: right; display: table-cell; vertical-align: middle; position: relative; }
+    nav .top-whatsapp {
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+
+    background: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+
+    color: #fff;
+    text-decoration: none;
+    position: fixed;        /* makes it float */
+    top: 20px;           /* position on screen */
+    right: 20px;
+    z-index: 9999;
+
+    transition: transform .2s ease, box-shadow .2s ease;
+}
     nav .top-whatsapp span { color: #fff; font-size: 18px; position: relative; }
     nav .top-whatsapp .Contact us { margin-right: 30px; }
     nav .top-whatsapp,
@@ -102,25 +119,48 @@
     .socialnetworks-icons:hover { opacity: .5; }
     .btn-schedule {
   -webkit-font-smoothing: antialiased;
-  padding: 10px;
-  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  color: #fff;
+  font-size: 20px;
+  color: #fff !important;
+  background-color: rgba(0,0,0,.7);
   border: 2px solid #fff;
+  padding: 10px 20px;
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
   position: absolute;
   top: 520px;
   left: 50%;
-  margin-left: -250px;
-  width: 500px;
-  text-align: center;
+  transform: translateX(-50%);
+  margin-left: 0 !important;     /* overrides the old -250px */
   z-index: 999;
-  background-color: rgba(0,0,0,.7);
-  cursor: pointer;
   border-radius: 10px;
-  transition-duration: .2s;
+  cursor: pointer;
+  transition: all .25s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,.4);
 }
-    .btn-schedule:hover { background-color: rgba(0,203,62,.8); color: #fffff; text-decoration: none; }
+
+/* Hover = bright WhatsApp green – exactly like original */
+.btn-schedule:hover {
+  background-color: rgba(0,203,62,.9) !important;
+  border-color: rgba(0,203,62,.9);
+  color: #fff !important;
+  text-decoration: none !important;
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,203,62,.5);
+}
+
+/* Mobile fix – same as original site */
+@media (max-width: 768px) {
+  .btn-schedule {
+    width: 300px;
+    font-size: 18px;
+    top: 540px;
+  }
+}
 #slideshow {
     position: relative;
     height: 610px !important;        
@@ -508,9 +548,9 @@
           
         <a href="https://wa.me/19086742809" target="_blank" class="top-whatsapp page-scroll">
       <div class="page-scroll">
-        <span class="hide-on-sm hide-on-md hide-on-xs">Contact us</span>
+        <span class="hide-on-sm hide-on-md hide-on-xs"></span>
         <span class="top-whatsapp-icon"><i class="fa fa-whatsapp"></i></span>
-        <span class="hide-on-sm hide-on-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +1 (908) 674-2809 </span>
+        <span class="hide-on-sm hide-on-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
       </div>
                   <!--
                   <a href="#page04" class="top-whatsapp page-scroll" ><div class="page-scroll"><span class="hide-on-sm hide-on-md hide-on-xs">Contact us</span> <span class="top-whatsapp-icon"><i class="fa fa-phone"></i></span><span class="hide-on-sm hide-on-xs">&nbsp;&nbsp;&nbsp;&nbsp; +1 (908) 674-2809</span></div></a>
